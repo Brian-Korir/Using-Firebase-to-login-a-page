@@ -12,5 +12,5 @@ const firebaseConfig = {
   measurementId: "G-GP5LL6T0S2"
 };
 const app = initializeApp(firebaseConfig);
-
-console.log(app)
+/* Challenge: Console log the projectId by using app.options.projectId */
+console.log(app.options.projextId)
