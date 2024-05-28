@@ -1,6 +1,7 @@
 /*===imports===*/
 import { initializeApp } from "firebase/app"
 /*===Firebase setup===*/
+/* IMPORTANT: Replace this with your own firebaseConfig when doing challenges */
 const firebaseConfig = {
   apiKey: "AIzaSyASJyunjd-33MLfjFHRMgCmr3TB8x5ebj8",
   authDomain: "korir-12.firebaseapp.com",
@@ -11,4 +12,5 @@ const firebaseConfig = {
   measurementId: "G-GP5LL6T0S2"
 };
 const app = initializeApp(firebaseConfig);
+
 console.log(app)
