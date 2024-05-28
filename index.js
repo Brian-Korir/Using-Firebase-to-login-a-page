@@ -1,6 +1,5 @@
 /*===imports===*/
 import { initializeApp } from "firebase/app"
-
 import { getAuth } from "firebase/auth";
 /*===Firebase setup===*/
 /* IMPORTANT: Replace this with your own firebaseConfig when doing challenges */
@@ -17,4 +16,4 @@ const app = initializeApp(firebaseConfig);
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
 /* Challenge: Console log the projectId by using app.options.projectId */
-console.log(app.options.projextId)
+
