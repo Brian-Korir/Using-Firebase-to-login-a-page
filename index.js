@@ -1,5 +1,7 @@
 /*===imports===*/
 import { initializeApp } from "firebase/app"
+
+import { getAuth } from "firebase/auth";
 /*===Firebase setup===*/
 /* IMPORTANT: Replace this with your own firebaseConfig when doing challenges */
 const firebaseConfig = {
