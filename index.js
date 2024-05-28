@@ -14,5 +14,7 @@ const firebaseConfig = {
   measurementId: "G-GP5LL6T0S2"
 };
 const app = initializeApp(firebaseConfig);
+// Initialize Firebase Authentication and get a reference to the service
+const auth = getAuth(app);
 /* Challenge: Console log the projectId by using app.options.projectId */
 console.log(app.options.projextId)
