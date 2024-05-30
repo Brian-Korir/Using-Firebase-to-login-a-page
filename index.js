@@ -43,7 +43,9 @@ function authSignInWithGoogle() {
     console.log("Sign in with Google")
 }
 
-
+function authSignInWithEmail() {
+    console.log("Sign in with email and password")
+}
 
 
 
