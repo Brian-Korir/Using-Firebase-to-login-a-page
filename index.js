@@ -30,3 +30,23 @@ signInWithGoogleButtonEl.addEventListener("click", authSignInWithGoogle)
 
 signInButtonEl.addEventListener("click", authSignInWithEmail)
 createAccountButtonEl.addEventListener("click", authCreateAccountWithEmail)
+
+/* === Main Code === */
+
+showLoggedOutView()
+
+/* === Functions === */
+
+/* = Functions - Firebase - Authentication = */
+
+function authSignInWithGoogle() {
+    console.log("Sign in with Google")
+}
+
+
+
+
+
+
+
+
