@@ -48,6 +48,52 @@ function authSignInWithEmail() {
     console.log("Sign in with email and password")
 }
 
+function authCreateAccountWithEmail() {
+    /*  Challenge:
+		Import the createUserWithEmailAndPassword function from 'firebase/auth'
+
+        Use the code from the documentaion to make this function work.
+        
+        Make sure to first create two consts, 'email' and 'password', to fetch the values from the input fields emailInputEl and passwordInputEl.
+       
+        If the creation of user is successful then you should show the logged in view using showLoggedInView()
+        If something went wrong, then you should log the error message using console.error.
+    */
+   
+
+    createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user
+            // ...
+        })
+        .catch((error) => {
+            const errorCode = error.code
+            const errorMessage = error.message
+            // ..
+        })
+}
+
+/* == Functions - UI Functions == */
+
+function showLoggedOutView() {
+    hideElement(viewLoggedIn)
+    showElement(viewLoggedOut)
+}
+
+function showLoggedInView() {
+    hideElement(viewLoggedOut)
+    showElement(viewLoggedIn)
+}
+
+function showElement(element) {
+    element.style.display = "flex"
+}
+
+function hideElement(element) {
+    element.style.display = "none"
+}
+
 
 
 
