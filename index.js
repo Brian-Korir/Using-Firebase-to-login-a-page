@@ -1,6 +1,7 @@
 /*===imports===*/
 import { initializeApp } from "firebase/app"
-import { getAuth} from "firebase/auth";
+import { getAuth,
+         createUserWithEmailAndPassword } from "firebase/auth";
 /*===Firebase setup===*/
 /* IMPORTANT: Replace this with your own firebaseConfig when doing challenges */
 const firebaseConfig = {
@@ -58,18 +59,18 @@ function authCreateAccountWithEmail() {
         If the creation of user is successful then you should show the logged in view using showLoggedInView()
         If something went wrong, then you should log the error message using console.error.
     */
-   
+    const email = emailInputEl.value
+    const password = passwordInputEl.value
+    
+      createUserWithEmailAndPassword(auth, email, password)
 
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-            // Signed in 
-            const user = userCredential.user
-            // ...
+           showLoggedInView()
         })
         .catch((error) => {
-            const errorCode = error.code
-            const errorMessage = error.message
-            // ..
+        console.error(error.message)
+         
         })
 }
 
