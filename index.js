@@ -78,7 +78,12 @@ function handleError(error){
 	let errrorMessage;
 	swith(error.code){
 		case "auth/weak-password":
-		errorMessage = "Password is too weak"
+		errorMessage = "Password is too weak.";
+		case "auth/invalid-email":
+		errorMessage = " Invalid Email Format";
+		case "auth/wrong-password":
+		error.Message = "Invalid E-mail or passwerd";
+		
 	}	
 }
 
@@ -102,7 +107,6 @@ function showElement(element) {
 function hideElement(element) {
     element.style.display = "none"
 }
-
 
 
 
