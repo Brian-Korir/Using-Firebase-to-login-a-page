@@ -73,6 +73,8 @@ function authCreateAccountWithEmail() {
          
         })
 }
+// Eroor handling process
+
 
 /* == Functions - UI Functions == */
 
