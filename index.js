@@ -82,6 +82,9 @@ function handleError(error){
 		case "auth/invalid-email":
 		errorMessage = " Invalid Email Format";
 		case "auth/wrong-password":
+		break;
+
+		
 		error.Message = "Invalid E-mail or passwerd";
 		
 	}	
