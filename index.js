@@ -76,10 +76,10 @@ function authCreateAccountWithEmail() {
 // Eroor handling process
 function handleError(error){
 	let errrorMessage;
-	swith(error.code)
-
-
-	
+	swith(error.code){
+		case "auth/weak-password":
+		errorMessage = "Password is too weak"
+	}	
 }
 
 
