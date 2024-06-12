@@ -74,6 +74,13 @@ function authCreateAccountWithEmail() {
         })
 }
 // Eroor handling process
+function handleError(error){
+	let errrorMessage;
+	swith(error.code)
+
+
+	
+}
 
 
 /* == Functions - UI Functions == */
