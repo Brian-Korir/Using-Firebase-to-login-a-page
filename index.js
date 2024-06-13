@@ -86,10 +86,12 @@ function handleError(error){
 		error.Message = "Invalid E-mail or passwerd";
     break;
 default;
+    error.Message="An error occured.Please try again"
 
-		
+return errorMessage
+	
 	}	
-}
+
 
 
 /* == Functions - UI Functions == */
